@@ -5,8 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.tzl.custom.ui.DemoActivity">
-    <Button
+    <com.tzl.custom.view.StarBar
+        android:id="@+id/starbar_order"
+        android:layout_gravity="center_vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:starCount="5"
+        app:starDistance="5dp"
+        app:starEmpty="@mipmap/star_hide"
+        app:starFill="@mipmap/star_show"
+        app:starSize="20dp"
+        app:isShowInteger="true"/>
 
 </android.support.constraint.ConstraintLayout>
